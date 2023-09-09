@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" size="32X32"  href="images/logo1.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="style.css" rel="stylesheet">
+  <link href="orderform.css" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script defer src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script defer src="orderform.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">(function() {emailjs.init("u_fRsF1o-B0munqYb");})();</script>
+  <script src="subscribe.js"></script>
+  <title>Taste of Laos order form</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-container2">
+            <div class="demo-only">Demo Only</div>
+            <a href="/">
+                <img class="logo2" src="images/logo1.png" alt="logo">
+            </a>
+        </div>
+        <div class="navbar-container">
+            <ul class="navbar-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="orderform.html">Order</a></li>
+            </ul>
+        </div>
+        <div class="mobile-navbar-container">
+            <div class="mobile-navbar">
+                <div class="mobile-menu">
+                    <ul class="mobile-menu-list">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="orderform.html">Order</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order-form-header">
+        <h1>Order Form</h1>
+        <h2 class="order-form-subheader">Take Out Only</h2>
+        <p class="order-form-subheader2">By placing your first order, you'll be placed in our mailing list to get notified monthly, your ordered will be reserved for our next pickup services.</p>
+    </div>
+    <div class="form-body">
+        <form id="takeOutForm" >
+            <input type="hidden" name="contact_number">
+            <!-- Main Dish Menu -->
+            <div class="menu-card-container">
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <img src="images/larb4.jpg" alt="menu">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Laos Special</h3>
+                        <ul>
+                            <li><strong>Larb</strong> - (Minced meat salad) </li>
+                            <li><strong>Khao niao</strong> - (Sticky Rice)</li>
+                            <li><strong>Tam som</strong> - (Green Papaya Salad)</li>
+                            <li><strong>Sien Savanh</strong> - (Beefy Jerky)</li>
+                            <li><strong>Jaew</strong> - (Dipping Sause) </li>
+                            <li>lettuce cups, cucumber slices</li>
+                            <li>Price: $28</li>
+                        </ul>
+                    </div>
+                    <div class="order-count-container">
+                        <div class="order-count">
+                            <div class="minus-btn"><div class="minus-btn"></div></div>
+                            <input type="text" name="order-count" class="menu1-input" value="0" disabled>
+                            <div class="plus-btn"><img src="images/plus.png" class="icon-btn"></div>
+                        </div>
+                    </div>
+                    <div class="confirm-btn-container">
+                        <div class="confirm-screen"></div>
+                        <div class="confirm-btn materialBtn">Confirm</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <img src="images/food6.jpg" alt="menu">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Beef Noddle Soup Regular Size </h3>
+                        <ul>
+                            <li><strong>
+                                Beef Noddle Soup
+                            </strong>
+                            </li>
+                            <li>Khao Piak Sen is kind of Lao noodle soup with layers of flavor which can be easily found in almost every street corner of Laos.</li>
+                            <li>Price: $16</li>
+                        </ul>
+                    </div>
+                    <div class="order-count-container">
+                        <div class="order-count">
+                            <div class="minus-btn2"><div class="minus-btn"></div></div>
+                            <input type="text" name="order-count" class="menu2-input" value="0" disabled>
+                            <div class="plus-btn2"><img src="images/plus.png" class="icon-btn">   </div>
+                        </div>
+                    </div>
+                    <div class="confirm-btn-container">
+                        <div class="confirm-screen2"></div>
+                        <div class="confirm-btn2">Confirm</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <img src="images/food6.jpg" alt="menu">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Beef Noddle Soup Kids Size </h3>
+                        <ul>
+                            <li><strong>
+                                Beef Noddle Soup
+                            </strong>
+                            </li>
+                            <li>Khao Piak Sen is kind of Lao noodle soup with layers of flavor which can be easily found in almost every street corner of Laos.</li>
+                            <li>Price: $12</li>
+                        </ul>
+                    </div>
+                    <div class="order-count-container">
+                        <div class="order-count">
+                            <div class="minus-btn3"><div class="minus-btn"></div></div>
+                            <input type="text" name="order-count" class="menu3-input" value="0" disabled>
+                            <div class="plus-btn3"><img src="images/plus.png" class="icon-btn">   </div>
+                        </div>
+                    </div>
+                    <div class="confirm-btn-container">
+                        <div class="confirm-screen3"></div>
+                        <div class="confirm-btn3">Confirm</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extra Side dish Menu -->
+            <div class="side-dish-container">
+                <div class="side-dish-header">
+                    <h2> Extra Side Dish</h2>
+                    <p>Limit one side dish per order</p>
+                </div>
+                <div class="side-dish-menu-container">
+                    <div class="side-dish-card">
+                 
+                        <div class="side-dish-img">
+                            <img src="images/food13.jpg" alt="menu">
+                        </div>
+                        <div class="side-dish-info">
+                            <h3>Larb</h3>
+                            <ul>
+                                <li>(Minced meat salad) </li>
+                                <li>Price: $10</li>
+                            </ul>
+                        </div>
+                        <div class="side-dish-check">
+                            <input type="checkbox" name="side-dish" class="side-dish1" value="0">
+                        </div>
+                    </div>
+                    <div class="side-dish-card">
+                     
+                        <div class="side-dish-img">
+                            <img src="images/food7.jpg" alt="menu">
+                        </div>
+                        <div class="side-dish-info">
+                            <h3>Khao niao</h3>
+                            <ul>
+                                <li>(Sticky Rice)</li>
+                                <li>Price: $4</li>
+                            </ul>
+                        </div>
+                        <div class="side-dish-check">
+                            <input type="checkbox" name="side-dish" class="side-dish2" value="0">
+                        </div>
+                    </div>
+                    <div class="side-dish-card">
+                      
+                        <div class="side-dish-img">
+                            <img src="images/food15.jpg" alt="menu">
+                        </div>
+                        <div class="side-dish-info">
+                            <h3>Tam som</h3>
+                            <ul>
+                                <li>(Green Papaya Salad)</li>
+                                <li>Price: $4</li>
+                            </ul>
+                        </div>
+                        <div class="side-dish-check">
+                            <input type="checkbox" name="side-dish" class="side-dish3" value="0">
+                        </div>
+                    </div>
+                    <div class="side-dish-card">
+                   
+                        <div class="side-dish-img">
+                            <img src="images/food18.jpg" alt="menu">
+                        </div>
+                        <div class="side-dish-info">
+                            <h3>Jaew</h3>
+                            <ul>
+                                <li>(Dipping Sause) </li>
+                                <li>Price: $3</li>
+                            </ul>
+                        </div>
+                        <div class="side-dish-check">
+                            <input type="checkbox" name="side-dish" class="side-dish4" value="0">
+                        </div>
+                    </div>
+                    <div class="side-dish-card">
+
+                        <div class="side-dish-img">
+                            <img src="images/food17.jpg" alt="menu">
+                        </div>
+                        <div class="side-dish-info">
+                            <h3>Sien Savanh</h3>
+                            <ul>
+                                <li>(Lao Beef Jerky)</li>
+                                <li>Price: $7</li>
+                            </ul>
+                        </div>
+                        <div class="side-dish-check">
+                            <input type="checkbox" name="side-dish" class="side-dish5" value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-container">
+                <div class="total-header">
+                    <h2>Order Summary</h2>
+                    <h3>Minium order $20</h3>
+                </div>
+                <div class="menu-confirm-container">
+                    <div class="sideDish1-confirm ">
+                        <div class="menu-image-container">
+                            <img src="images/larb5.jpg" class="menu-confirm-img" alt="menu">
+                        </div>
+                        <div class="sideDish1-name"><p>Extra Larb</p>
+                            <div class="sideDish1-price"><div>=</div> &nbsp; $ 10</div>
+                        </div>
+                    </div>
+                    <div class="sideDish2-confirm ">
+                        <div class="menu-image-container">
+                        <img src="images/food7.jpg" class="menu-confirm-img" alt="menu">
+                        </div>
+                        <div class="sideDish2-name"><p>Extra Khao niao</p>
+                            <div class="sideDish2-price"><div>=</div> &nbsp; $ 4</div>
+                        </div>
+                    </div>
+                    <div class="sideDish3-confirm ">
+                        <div class="menu-image-container">
+                        <img src="images/food15.jpg" class="menu-confirm-img" alt="menu">
+                        </div>
+                        <div class="sideDish3-name"><p>Extra Tam som</p>
+                            <div class="sideDish3-price"><div>=</div> &nbsp; $ 4</div>
+                        </div>
+                    </div>
+                    <div class="sideDish4-confirm ">
+                        <div class="menu-image-container">
+                        <img src="images/food18.jpg" class="menu-confirm-img" alt="menu">
+                        </div>
+                        <div class="sideDish4-name"><p>Extra Jaew</p>
+                            <div class="sideDish4-price"><div>=</div> &nbsp; $3</div>
+                        </div>
+                    </div>
+                    <div class="sideDish5-confirm ">
+                        <div class="menu-image-container">
+                        <img src="images/food17.jpg" class="menu-confirm-img" alt="menu">
+                        </div>
+                        <div class="sideDish5-name"><p>Extra Sien Savanh</p>
+                            <div class="sideDish5-price"><div>=</div> &nbsp; $ 7</div>
+                        </div>
+                    </div>
+                </div>
+         
+                    <div class="menu-inner-total-container">
+                        <div class="inner-total"></div>
+                    </div>
+      
+                <div class="total">
+                    <h2>Total</h2>
+                    <div class="menu-total-container">$<div class="menu-total">0</div></div>
+                </div>
+                <div class="form__container">
+                    <div class="form__input__container">
+                        <label class="form__label" for="user_name"
+                        >Full Name</label
+                        >
+                        <input
+                        type="text"
+                        name="user_name"
+                        placeholder="Full Name"
+                        class="full__name__input laos-input "
+                        required
+                        />
+                    </div>
+                    <div class="form__input__container">
+                        <label class="form__label" for="user_email">Email</label>
+                        <input 
+                        type="email" 
+                        name="user_email"
+                        placeholder="Email" 
+                        class="email__input laos-input " 
+                        />
+                    </div>
+                    <div class="form__input__container hidden">
+                        <label class="form__label" for="message">Message</label>
+                        <textarea 
+                        type="text" 
+                        name="message" 
+                        class="message__input laos-input " 
+                        ></textarea>
+                    </div>
+                </div>
+                <div class="menu-submit-container">
+                    <div class="menu-submit-btn">Submit</div>
+                    <!-- Button trigger modal -->
+                </div>  
+            </div>
+        
+            <!-- Modal -->
+            <!-- build bootstrap modal when menu-submit-btn is clicked to confirm  -->
+            <div class="menu-modal">
+                <div class="order-confirm-container">
+                    <div class="confirm-container1 ">
+                        <div class="order-confirm-header">
+                            <h2>Order Confirm</h2>
+                            <h3>Minium order $20</h3>
+                        </div>
+                        <div class="order-confirm-total">
+                            <div class="order-confirm-total-container"></div>
+                            <div class="menu-modal-confirm-container">
+                                <!-- cancel and confirm order button -->
+                                <div class="cancel-order-btn materialBtn">Cancel</div>
+                                <button type="submit" value="Send" class="confirm-order-btn materialBtn">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="confirm-container-thank-you hidden">
+                        <div class="thank-you-header">
+                            <h2>ຂໍຂອບໃຈສໍາລັບການສັ່ງຊື້ຂອງເຈົ້າ</h2>
+                            <h2>Thank You</h2>
+                            <h3>For Your Order 🙏</h3>
+                        </div>
+
+                        <div class="thank-you-message">
+                            <p>Thank you for your order. We will contact you shortly.</p>
+                        </div>
+                        <div class="thank-you-btn-container">
+                            <a href="/" class="thank-you-btn materialBtn">
+                                <div class="thank-you-btn materialBtn">OK</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">Strategy and Design by:<a href="https://andarlin.ca/"> Lin Creative</a></div>
+
+</body>
+</html>
