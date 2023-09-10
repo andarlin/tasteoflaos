@@ -29,13 +29,13 @@
 }
 
 body{
+  position: relative;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
     background: #91875e;
     background: linear-gradient(90deg, #91875e 0%, #c7bd94 20%, #91875e 100%);
-    
     margin: 0;
     padding: 0;
     font-weight: 400;
@@ -83,25 +83,26 @@ body p{
   /* ***********************Navbar****************** */
 
 .navbar{
-  position:sticky;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   padding: 0 3%;
   background: #666565b3;
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
   height: 80px;
   width: 100%;
-  position: fixed;
-  top: 0;
   z-index: 100;
   transition: all 0.5s ease-in-out;
+  margin:0;
 }
 .logo-container2{
   z-index: 4;
   margin-right: auto;
 }
-
+.navbar-container{
+  display: flex;
+  width: auto;
+  height: 25px;
+  margin: auto 0;
+}
 .navbar-menu{
   list-style: none;
   padding: 0;
@@ -117,10 +118,10 @@ body p{
   text-decoration: none;
   color: var(--platinum);
   font-size: 15px;
-
   font-weight: 400;
   transition: all 0.5s ease-in-out;
 }
+
 .navbar-menu li a:hover{
   color: var(--rick-black);
 }
@@ -901,7 +902,7 @@ body p{
       padding: 1rem 0;
     }
     .demo-only {
-      transform: rotate(-38deg) translate(-33%, -203%);
+      transform: rotate(-38deg) translate(-35%, -191%)
   }
 
   .navbar-menu li{
@@ -1280,6 +1281,7 @@ body p{
       width: 90px;
       height: auto;
       margin-left:2rem;
+      margin-top:1rem;
     }
     .email-input{
       width:100%;

@@ -20,50 +20,18 @@ const locoScroll =  new LocomotiveScroll({
   });
   
 
-  gsap.timeline().from(".section1-background", {
-          scrollTrigger:{
-          trigger:".section1",
-          toggleActions:"restart pause reverse reset",  
-          scroller:".scroll-container",
-          scrub: true,
-          pin: true,
-          start: "top top",
-          end: "bottom 20%"
-          },
-          xPercent:100,
-          ease:"ease"
-          }).from(".header1", {
-      scrollTrigger: {
-      trigger: ".section1",
-      scroller: ".scroll-container",
-      scrub: true,
-      start: "top 5%",
-      end: "+=100%",
-      ease:"ease"
-    },
-      x:-2000,
-      opacity:0,
-      duration:1,
-      transformOrigin: "center center" 
-      }).from(".header2", {
-      scrollTrigger: {
-      trigger: ".section1",
-      scroller: ".scroll-container",
-      scrub: true,
-      start: "top 20%",
-      end: "+=100%",
-      ease:"ease"
-    },
-      y:2000,
-      opacity:0,
-      duration:1,
-      transformOrigin: "center center" 
-  });
+  //gsap tween on load for hero-header
+  let tl = gsap.timeline();
+  
+  tl.from(".hero-header", { x: -200, opacity: 0, duration: 1, ease: "ease" });
+  tl.from(".header1", { x: 200, opacity: 0, duration: 1, ease: "ease" });
+  tl.from(".header2", { x: 200, opacity: 0, duration: 1, ease: "ease" });
+
 
   gsap.timeline().from(".section6-text", {
     scrollTrigger:{
       trigger:".section6",
-      toggleActions:"restart pause reverse reset",
+      toggleActions:"play complete complete complete",
       scroller:".scroll-container",
       scrub: true,
       start: "top 20%",
@@ -76,7 +44,7 @@ const locoScroll =  new LocomotiveScroll({
   gsap.timeline().from(".section6-image1", {
     scrollTrigger:{
       trigger:".section6",
-      toggleActions:"restart pause reverse reset",
+      toggleActions:"play complete complete complete",
       scroller:".scroll-container",
       scrub: true,
       start: "top 20%",
@@ -91,7 +59,7 @@ const locoScroll =  new LocomotiveScroll({
   gsap.from(".section2-image1", {
     scrollTrigger:{
     trigger:".section2",
-    toggleActions:"restart pause reverse reset",
+    toggleActions:"play complete complete complete",
     scroller:".scroll-container",
     start:"top center",
     end:"bottom center",
@@ -104,7 +72,7 @@ const locoScroll =  new LocomotiveScroll({
   gsap.from(".section2-image2", {
       scrollTrigger:{
       trigger:".section2",
-      toggleActions:"restart pause reverse reset",
+      toggleActions:"play complete complete complete",
       scroller:".scroll-container",
       start:"top center",
       end:"bottom center",
@@ -117,7 +85,7 @@ const locoScroll =  new LocomotiveScroll({
         gsap.from(".section2-image3", {
             scrollTrigger:{
             trigger:".section2-container2",
-            toggleActions:"restart pause reverse reset",
+            toggleActions:"play complete complete complete",
             scroller:".scroll-container",
             start:"top center",
             end:"bottom center",
@@ -129,7 +97,7 @@ const locoScroll =  new LocomotiveScroll({
         gsap.from(".section2-image4", {
             scrollTrigger:{
             trigger:".section2-container2",
-            toggleActions:"restart pause reverse reset",
+            toggleActions:"play complete complete complete",
             scroller:".scroll-container",
             start:"top center",
             end:"bottom center",
@@ -168,7 +136,7 @@ const locoScroll =  new LocomotiveScroll({
   gsap.from(".laos-special-menu-card", {
     scrollTrigger:{
     trigger:".section4",
-    toggleActions:"restart pause reverse reset",
+    toggleActions:"play complete complete complete",
     scroller:".scroll-container",
     start:"top center",
     end:"bottom center",
@@ -180,7 +148,7 @@ const locoScroll =  new LocomotiveScroll({
 gsap.from(".beef-noddle-soup-menu-card", {
     scrollTrigger:{
     trigger:".beef-noddle-soup-menu-card",
-    toggleActions:"restart pause reverse reset",
+    toggleActions:"play complete complete complete",
     scroller:".scroll-container",
     start:"top center",
     end:"bottom center",

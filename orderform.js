@@ -64,6 +64,7 @@ class Order {
     this.modal();
     this.menuObjectFunction();
     this.marterialButton();
+    this.emailjs();
 
 
   }
@@ -498,6 +499,31 @@ class Order {
       });
     });
   }
+  ////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////
+  //9. emailjs
+  emailjs(){
+
+    window.onload = function() {
+        
+      document.getElementById('takeOutForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          // generate a five digit number for the contact_number variable
+          this.contact_number.value = Math.random() * 100000 | 0;
+          // these IDs from the previous steps
+          emailjs.sendForm("service_1nen55o","template_3h3c89a", '#takeOutForm')
+          .then(function() {
+              console.log('SUCCESS!');
+              alert("Your order has been sent. Thank you!");
+              }, function(error) {
+                  console.log('FAILED...', error);
+              });
+      });
+    }
+
+  }
+
+
 
 
 
