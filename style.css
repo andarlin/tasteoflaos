@@ -213,6 +213,8 @@ body p{
     background-position:center;
     background-repeat:no-repeat;
 }
+
+
   .section1-background{
     position:absolute;
     width:100%;
@@ -904,6 +906,9 @@ body p{
 
   .navbar-menu li{
     margin:0 10px;
+  }
+  .section1-video-container{
+    display: none;
   }
     .section1{
       height: 100vh;

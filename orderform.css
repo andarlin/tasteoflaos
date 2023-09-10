@@ -272,6 +272,9 @@ background: radial-gradient(circle, rgba(145,135,94,1) 14%, rgba(138,122,116,1) 
 .confirm-btn,
 .confirm-btn2,
 .confirm-btn3{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
     border-radius: 7px;
     background: #289944;
     color: var(--platinum);
@@ -282,15 +285,8 @@ background: radial-gradient(circle, rgba(145,135,94,1) 14%, rgba(138,122,116,1) 
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     padding: 10px 30px;
-    overflow: hidden;
 }
-.confirm-btn:hover,
-.confirm-btn2:hover,
-.confirm-btn3:hover{
-    background: #1e7e3e;
-    transform: translateY(-.3rem);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
+
 
 .menu-confirm-container{
     margin: 20px 20px 20px 0;
@@ -354,7 +350,7 @@ background: radial-gradient(circle, rgba(145,135,94,1) 14%, rgba(138,122,116,1) 
 }
 
 .menu-total-container{
-    font-size: 2.5rem;
+    font-size: 24px;
     font-weight: 500;
     color: var(--platinum);
     margin:0 auto 10px auto;
@@ -434,9 +430,7 @@ background: radial-gradient(circle, rgba(145,135,94,1) 14%, rgba(138,122,116,1) 
     transition: all 0.5s ease-in-out;
 }
 
-.side-dish-card:hover{
-    transform: scale(1.05);
-}
+
 .side-dish-info{
     padding: 10px;
 }
@@ -820,7 +814,7 @@ background: radial-gradient(circle, rgba(145,135,94,1) 14%, rgba(138,122,116,1) 
     .total{
         top: 86px;
         right: 10px;
-        height: 80px;
+        height: 75px;
     }
     .total-container{
         width: 100%;
@@ -844,7 +838,7 @@ background: radial-gradient(circle, rgba(145,135,94,1) 14%, rgba(138,122,116,1) 
         margin: 22rem auto 5rem auto;
     }
     .order-form-header{
-        margin-top: 6rem;
+        margin-top: 10rem;
     }
 
     .order-form-header h1{

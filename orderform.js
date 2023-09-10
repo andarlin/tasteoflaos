@@ -38,7 +38,7 @@ const menuSubmitContainer = document.querySelector(".menu-submit-container");
 const menuSubmitBtn = document.querySelector(".menu-submit-btn");
 const messageInput = document.querySelector(".message__input");
 const orderConfirmTotalContainer = document.querySelector(".order-confirm-total-container");
-
+const materialBtn = document.querySelectorAll(".materialBtn");
 
 
 
@@ -63,6 +63,7 @@ class Order {
     this.sideDishConfirm();
     this.modal();
     this.menuObjectFunction();
+    this.marterialButton();
 
 
   }
@@ -470,12 +471,31 @@ class Order {
       messageInput.value = customerMessage;
 
       orderConfirmTotalContainer.insertAdjacentHTML("beforeend", customerMessage);
-
-
-
-
-
   
+    });
+  }
+  ////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////
+  //8. material button
+  marterialButton(){
+    materialBtn.forEach(btn => {
+      btn.addEventListener("click", (e) => {
+
+        let x = e.clientX - e.target.offsetLeft;
+        let y = e.clientY - e.target.offsetTop;
+
+        console.log(x, y);
+
+        let ripples = document.createElement("span");
+        ripples.style.left = x + "px";
+        ripples.style.top = y + "px";
+        this.appendChild(ripples);
+
+        setTimeout(() => {
+          ripples.remove();
+        }, 1000);
+    
+      });
     });
   }
 

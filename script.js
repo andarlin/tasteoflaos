@@ -87,18 +87,7 @@ const locoScroll =  new LocomotiveScroll({
       ease:"ease"
     });
 
-  // gsap.from(".section2-header", {
-  //         scrollTrigger:{
-  //         trigger:".section2",
-  //         toggleActions:"restart pause reverse reset",  
-  //         scroller:".scroll-container",
-  //         start:"top top",
-  //         end:"center center",
-  //         },
-  //         y:200,
-  //         opacity:0,
-  //         ease:"ease",
-  //         });
+
   gsap.from(".section2-image1", {
     scrollTrigger:{
     trigger:".section2",
@@ -155,37 +144,6 @@ const locoScroll =  new LocomotiveScroll({
 
 
   
-  // var tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".section4",
-  //       scroller: ".scroll-container",
-  //       scrub: true,
-
-  //       start: "top top",
-  //       end: "+=100%"
-  //     }
-  //   });
-  
-  //   tl.to(".section4 div", {backgroundColor: "#289944"}, 0);
-  
-
-    // add media query to disable scrolltrigger on mobile at screen width 768px
-const mediaQuery = window.matchMedia('(min-width: 768px)')
-if (mediaQuery.matches) {
-  gsap.registerPlugin(ScrollTrigger);
-}
-else {
-  ScrollTrigger = null;
-}
-
-  
-
-  // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-  
-  // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-  ScrollTrigger.refresh();
-
 
   //swiper carousel
   const swiper = new Swiper(".mySwiper", {
@@ -205,6 +163,34 @@ else {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+  gsap.from(".laos-special-menu-card", {
+    scrollTrigger:{
+    trigger:".section4",
+    toggleActions:"restart pause reverse reset",
+    scroller:".scroll-container",
+    start:"top center",
+    end:"bottom center",
+    },
+    x:-200,
+    opacity:0,
+    ease: "ease"
+    });
+gsap.from(".beef-noddle-soup-menu-card", {
+    scrollTrigger:{
+    trigger:".beef-noddle-soup-menu-card",
+    toggleActions:"restart pause reverse reset",
+    scroller:".scroll-container",
+    start:"top center",
+    end:"bottom center",
+    },
+    x:200,
+    opacity:0,
+    stagger:0.2,
+    ease: "ease"
+    });
+
 
   // modal popup function
   const modalThankYou = document.querySelector(".modal-thank-you");
