@@ -488,6 +488,7 @@ body p{
   .section4{
     display:block;
     padding-top:5rem;
+    height: auto;
   }
   .div1{
     transform:scale(0);
@@ -596,6 +597,8 @@ body p{
   display:block;
   position: relative;
   margin-top:10rem;
+  height: auto;
+  background: #666565b3;
 
 }
 .section5-header{
@@ -884,9 +887,9 @@ body p{
 }
 
 .footer-link{
-  position: absolute;
-  bottom: 0;
-  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 2rem 0 0;
   color: var(--platinum);
 }
 .footer-link a{
@@ -911,9 +914,9 @@ body p{
   /* *********************Media Query*********************** */
 
   @media (max-width:993px) {
-    /* .navbar{
+    .navbar{
       position:fixed;
-    } */
+    }
   
     section{
       padding: 1rem 0;
@@ -998,9 +1001,11 @@ body p{
 
     .hero-header{
       font-size:3rem;
+      font-weight: 500;
     }
     .header-text h2 {
       font-size: 2rem;
+      font-weight: 300;
     }
     .background-image-container{
       display: none;
@@ -1165,7 +1170,6 @@ body p{
     }
     .section5{
       height: auto;
-      margin-top:65rem;
     }
     .section5-container{
       width: 100%;

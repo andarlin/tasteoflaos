@@ -150,14 +150,14 @@ background: radial-gradient(circle, rgba(145,135,94,1) 14%, rgba(138,122,116,1) 
 .menu-img{
     position: relative;
     width:400px;
-    height:auto;
+    height:250px;
     overflow: hidden;
     border-radius: 7px 7px 0 0;
 }
 .menu-img img{
-    width:115%;
+    width:100%;
     height: auto;
-    transform: translate(-34px,-11px);
+    transform: translate(0px,-11px);
 
 }
 .menu-info{
