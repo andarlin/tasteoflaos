@@ -562,7 +562,7 @@ body p{
 }
 .menu-card__picture{
   width: 100%;
-  height: 230px;
+  height: 200px;
   overflow: hidden;
   border-radius: 7px 7px 0 0;
 }
@@ -578,8 +578,7 @@ body p{
     font-size: 2.3rem;
     color: #3d3d3d;
     text-transform: uppercase;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+
 }
 .menu-card ul{
     list-style: none;
@@ -894,10 +893,28 @@ body p{
   color: var(--platinum);
   text-decoration: none;
 }
+.modal-footer a{
+    color: var(--platinum);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 10px 40px;
+    background: var(--rick-black);
+    border-radius: 7px;
+    transition: all 0.3s ease;
+    border:none;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+
+ 
+}
   
   /* *********************Media Query*********************** */
 
   @media (max-width:993px) {
+    /* .navbar{
+      position:fixed;
+    } */
+  
     section{
       padding: 1rem 0;
     }
@@ -1119,7 +1136,6 @@ body p{
     }
     .section4-header{
       font-size: 4rem!important;
-      color: azure;
       text-align: center;
       display: block;
       margin: 0 auto;
@@ -1149,7 +1165,7 @@ body p{
     }
     .section5{
       height: auto;
-      margin-top:60rem;
+      margin-top:65rem;
     }
     .section5-container{
       width: 100%;
@@ -1160,6 +1176,7 @@ body p{
       flex-direction: column;
       align-items: center;
       padding:0 1rem;
+      margin-bottom:5rem;
     }
     .section5-inner-container{
       position: relative;
@@ -1244,7 +1261,6 @@ body p{
     }
     .section6-paragraph{
       font-size: 2rem;
-      color: azure;
       text-align: center;
       display: block;
       margin: 0 auto;
