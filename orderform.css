@@ -268,7 +268,7 @@ background: radial-gradient(circle, rgba(145,135,94,1) 14%, rgba(138,122,116,1) 
 .confirm-screen,
 .confirm-screen2,
 .confirm-screen3{
-    width: 90vw;
+    width: 400px;
     height: 12rem;
     background: #d3d3d39c;
     position: absolute;
@@ -895,5 +895,10 @@ background: radial-gradient(circle, rgba(145,135,94,1) 14%, rgba(138,122,116,1) 
     }
     .menu-submit-btn{
         width:50%;
+    }
+    .confirm-screen,
+    .confirm-screen2,
+    .confirm-screen3{
+    width:90vw;
     }
  }
