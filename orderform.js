@@ -457,14 +457,14 @@ class Order {
 
 
       const customerMessage = `
-      ${menuObject.laosSpecial.name} x ${menuObject.laosSpecial.count} <br> 
-      ${menuObject.beefNoodleSoupLarge.name} x ${menuObject.beefNoodleSoupLarge.count} <br> 
-      ${menuObject.beefNoodleSoupSmall.name} x ${menuObject.beefNoodleSoupSmall.count} <br> 
-      ${menuObject.sideDish1.name} x ${menuObject.sideDish1.count} <br> 
-      ${menuObject.sideDish2.name} x ${menuObject.sideDish2.count} <br> 
-      ${menuObject.sideDish3.name} x ${menuObject.sideDish3.count} <br> 
-      ${menuObject.sideDish4.name} x ${menuObject.sideDish4.count} <br> 
-      ${menuObject.sideDish5.name} x ${menuObject.sideDish5.count} <br>
+      ${menuObject.laosSpecial.name} x ${menuObject.laosSpecial.count} \n
+      ${menuObject.beefNoodleSoupLarge.name} x ${menuObject.beefNoodleSoupLarge.count} \n
+      ${menuObject.beefNoodleSoupSmall.name} x ${menuObject.beefNoodleSoupSmall.count} \n 
+      ${menuObject.sideDish1.name} x ${menuObject.sideDish1.count} \n 
+      ${menuObject.sideDish2.name} x ${menuObject.sideDish2.count} \n 
+      ${menuObject.sideDish3.name} x ${menuObject.sideDish3.count} \n 
+      ${menuObject.sideDish4.name} x ${menuObject.sideDish4.count} \n 
+      ${menuObject.sideDish5.name} x ${menuObject.sideDish5.count} \n
       Total = $ ${menuTotal.textContent}
       `
       console.log(customerMessage); 
@@ -514,7 +514,6 @@ class Order {
           emailjs.sendForm("service_1nen55o","template_3h3c89a", '#takeOutForm')
           .then(function() {
               console.log('SUCCESS!');
-              alert("Your order has been sent. Thank you!");
               }, function(error) {
                   console.log('FAILED...', error);
               });
